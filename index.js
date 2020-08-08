@@ -59,9 +59,6 @@ footer: {
 })
 });
 
-  client.user.setActivity(` | ${client.guilds.size}個のサーバーで稼働中`, {
-    type: 'STREAMING'
-  });
 
 
 
@@ -81,6 +78,15 @@ footer: {
 
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
+  client.user.setPresence({ 
+    game: { 
+      name: 'with discord.js' 
+    }, 
+    status: 'idle' ,
+    activity : {
+      name : "男？それとも女？",
+      type : LISTENING
+  })
 });
 
 client.on('message', async message => {
