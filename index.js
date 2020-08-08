@@ -12,7 +12,7 @@ express()
 
 client.on("guildMemberRemove" , async member => {
   const channel = member.guild.channels.get("611474677465874440")
-  channel.send(embed: {
+  channel.send({embed: {
       color: 02552551,
       author: {
         name: client.user.username,
@@ -35,7 +35,7 @@ footer: {
 })
 
 client.on('guildMemberAdd', message => {
-message.guild.channels.get('497998038305079296').send({embed: {
+message.guild.channels.get('611474677465874440').send({embed: {
       color: 02552551,
       author: {
         name: client.user.username,
