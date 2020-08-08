@@ -86,6 +86,7 @@ client.on('ready', () => {
     activity : {
       name : "男？それとも女？",
       type : LISTENING
+    }
   })
 });
 
