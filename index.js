@@ -60,7 +60,6 @@ footer: {
   client.user.setActivity(` | ${client.guilds.size}個のサーバーで稼働中`, {
     type: 'STREAMING'
   });
-});
 
 
 
