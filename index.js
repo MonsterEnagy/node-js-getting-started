@@ -85,7 +85,7 @@ client.on('ready', () => {
     status: 'idle' ,
     activity : {
       name : "男？それとも女？",
-      type : LISTENING
+      type : "LISTENING"
     }
   })
 });
